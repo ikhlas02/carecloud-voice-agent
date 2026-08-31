@@ -1,0 +1,29 @@
+{
+  "name": "carecloud-voice-agent",
+  "version": "1.0.0",
+  "description": "Voice AI Agent for Patient Registration - CareCloud Technical Assessment",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "setup-vapi": "node scripts/setup-vapi.js",
+    "test": "node --test src/__tests__/patients.test.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": ["voice-ai", "patient-registration", "vapi", "carecloud"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
